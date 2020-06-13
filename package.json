@@ -2,6 +2,11 @@
   "name": "project-aurora",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "name": "Jacob Herper",
+    "email": "jacob@herper.io",
+    "url": "https://herper.io/"
+  },
   "scripts": {
     "develop": "next dev",
     "build": "next build",
@@ -10,6 +15,11 @@
     "format": "yarn prettier . --write",
     "test": "jest",
     "test:watch": "jest --watch"
+  },
+  "jest-runner-eslint": {
+    "cliOptions": {
+      "ignorePath": "./.gitignore"
+    }
   },
   "dependencies": {
     "next": "9.4.4",
